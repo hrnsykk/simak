@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 final class SimakMainServiceProvider extends ServiceProvider
 {
+
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
@@ -15,6 +16,10 @@ final class SimakMainServiceProvider extends ServiceProvider
                     DataTransferObjectMakeCommand::class,
                 ],
             );
+
+            $this->publishes([
+                __DIR__.'/../config/simak.php' => config_path('simak.php'),
+            ], 'simak-config');
         }
     }
 }
