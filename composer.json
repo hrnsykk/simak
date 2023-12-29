@@ -1,0 +1,24 @@
+{
+    "name": "hrnsykk/simak",
+    "description": "Simak an open-source admin panel written in PHP on top of the popular Laravel framework.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hrnsykk\\Simak\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hrnsykk\\Simak\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Harun Soykok",
+            "email": "soykokharun@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.19"
+    }
+}
