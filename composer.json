@@ -2,6 +2,7 @@
     "name": "hrnsykk/simak",
     "description": "Simak an open-source admin panel written in PHP on top of the popular Laravel framework.",
     "license": "MIT",
+    "version": "0.0.1",
     "autoload": {
         "psr-4": {
             "Hrnsykk\\Simak\\": "src/"
