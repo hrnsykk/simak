@@ -18,7 +18,7 @@ final class SimakMainServiceProvider extends ServiceProvider
             );
 
             $this->publishes([
-                __DIR__.'/../config/simak.php' => config_path('simak.php'),
+                __DIR__.'/../../config/simak.php' => config_path('simak.php'),
             ], 'simak-config');
         }
     }
